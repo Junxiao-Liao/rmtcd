@@ -8,7 +8,8 @@ Owns: component list, interactions, flows, doc map.
 Owns not: versions (see `tech-stack`), API shapes (see `backend`), provisioning (see `operations`).
 
 Locked:
-- Browser -> backend -> workspace-runtime -> operations layering.
-- Backend enforces auth/roles; `features` defines tiers.
+- Angular control UI -> gateway -> per-workspace code-server (subdomain, top-level tab, no iframe). Containers private.
+- Native IDE terminal only; no backend-proxied user exec path.
+- Backend enforces auth/roles + project grants; `features` defines tiers.
 
-Open: sequence details for shell attach, sync, vscode-server attach.
+Open: launch/session sequence details, sync semantics, reconnect behavior.

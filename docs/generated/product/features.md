@@ -8,8 +8,8 @@ Owns: tier names, capability matrix (storage, shell, extensions, server use, lim
 Owns not: auth mechanics, roles implementation, admin APIs (see `backend`).
 
 Locked:
-- Separate non-tech doc.
-- Capability-matrix scope (no pricing copy yet).
-- Premium: files on server, shell, LSP + highlight. Normal: public repo ephemeral, light editor, no shell.
+- Separate non-tech doc; capability-matrix scope.
+- Premium: files on server, native shell/terminal, curated LSP + highlight allowlist (curation, not sandbox). Normal: public-repo ephemeral, light editor, no shell.
+- Extension restriction is managed IDE policy; container isolation is the security boundary.
 
 Open: limit values, upgrade flow (out of scope for now).
