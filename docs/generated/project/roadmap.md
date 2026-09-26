@@ -13,4 +13,6 @@ Locked:
 - Second slice is premium open: create, open tab, terminal works.
 - Third slice is the normal editor: repo URL in, editable files out.
 
-Open: order of the remaining slices (Angular UI completion, harden).
+- Then hardening first: persisted logs, health endpoints, isolation review. Angular UI completion comes last.
+
+Open: none. Order is provision, admin, premium open, normal editor, hardening, Angular UI completion.
