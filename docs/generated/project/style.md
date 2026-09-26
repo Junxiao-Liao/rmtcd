@@ -10,5 +10,6 @@ Owns not: area layouts (see `frontend/structure`, `backend/structure`, `devops/s
 Locked:
 - Elegant FP style: pure functions where possible, data over hidden state, explicit effects at the edges.
 - One purpose per file; files stay small and orthogonal.
+- Schema changes always keep RDB normal forms; the schema doc tracks every table.
 
 Open: formatter/linter picks and per-language idioms at scaffold.

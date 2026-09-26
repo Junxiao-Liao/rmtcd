@@ -7,6 +7,8 @@ Purpose: order the build so each phase is usable.
 Owns: phases, order, entry/exit criteria.
 Owns not: technical detail (see area docs).
 
-Locked: (none yet)
+Locked:
+- Provision first (script, box, k3s, Cloudflare, RDS); then build by feature slice, each slice shipping backend + UI together — never APIs without a consumer.
+- First slice is admin: users, quotas, usage, invites — before any workspace exists.
 
-Open: phases and order.
+Open: slice order after admin.
