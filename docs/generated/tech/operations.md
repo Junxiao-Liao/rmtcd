@@ -15,4 +15,4 @@ Locked:
 - Observability starts with persisted logs plus health endpoints; metrics and alerting later.
 - Minimal resources per proposal goal.
 
-Open: provisioning steps, storage-driver/placement for fleet move, capacity measured when slow.
+Open: provisioning script contents at build; fleet placement deferred to the move.

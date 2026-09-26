@@ -19,4 +19,4 @@ Locked:
 - Reconnect relies on stock code-server behavior: the server keeps state, the browser auto-reconnects and resumes; manual reload only if the socket is dead.
 - Angular shell holds workspaces, open, account, and admin; the normal light editor lives there too.
 
-Open: git UX.
+Open: none; git is client-side isomorphic-git, pull only. Scaffold detail only.

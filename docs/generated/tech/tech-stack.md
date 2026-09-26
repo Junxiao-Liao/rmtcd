@@ -1,6 +1,6 @@
 # tech-stack (generated)
 
-> Generated from `docs/proposal.md`. Agents: keep up to date with code. Humans: principles + candidates only.
+> Generated from `docs/proposal.md`. Agents: keep up to date with code.
 
 Purpose: record choices of languages, frameworks, container/k8s approach, S3-first services, and the thin self-defined portability wrapper (dapr-like).
 

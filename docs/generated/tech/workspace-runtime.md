@@ -17,4 +17,4 @@ Locked:
 - Runtime owns code-server lifecycle (start, health, shutdown); ops owns image and host.
 - Quotas: normal has no workspace or container; premium per-workspace quota is admin-configurable, defaulting small (0.5 vCPU, 1 GB RAM, 5 GB disk). Workspace count per user is admin-configurable too, defaulting to one.
 
-Open: volume shapes.
+Open: exact EBS type and mount options at scaffold.
