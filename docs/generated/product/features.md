@@ -1,6 +1,6 @@
 # features (generated, non-tech)
 
-> Generated from `docs/proposal.md`. Human-maintained for tier meaning; agents: enforce, do not redefine tiers here.
+> Generated from `docs/proposal.md`. Agents: enforce, do not redefine tiers here.
 
 Purpose: define normal vs premium capability matrix in product terms.
 
@@ -9,7 +9,8 @@ Owns not: auth mechanics, roles implementation, admin APIs (see `backend`).
 
 Locked:
 - Separate non-tech doc; capability-matrix scope.
-- Premium: files on server, native shell/terminal, curated LSP + highlight allowlist (curation, not sandbox). Normal: public-repo ephemeral, light editor, no shell.
-- Extension restriction is managed IDE policy; container isolation is the security boundary.
+- Premium: a whole dev-server container to mess with (not a single project): files on server (container filesystem, no S3 backup for now), native shell/terminal, admin-configurable per-workspace quota, full extension ecosystem with no allowlist. Normal: no workspace or container; public repos live only in browser memory, plain Monaco editor with tokenization only, client-side git pull only, no shell.
+- Billing is metered on workspace hours and stored GB-hours; usage is recorded, payment comes later.
+- The container is the only security boundary; there is no extension restriction to enforce.
 
-Open: limit values, upgrade flow (out of scope for now).
+Open: upgrade flow (out of scope for now).

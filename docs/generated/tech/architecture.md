@@ -8,8 +8,8 @@ Owns: component list, interactions, flows, doc map.
 Owns not: versions (see `tech-stack`), API shapes (see `backend`), provisioning (see `operations`).
 
 Locked:
-- Angular control UI -> gateway -> per-workspace code-server (subdomain, top-level tab, no iframe). Containers private.
+- Angular control UI -> Rust backend (auth + byte-forwarding) -> per-workspace code-server (subdomain with opaque ID, top-level tab, no iframe). Containers private.
 - Native IDE terminal only; no backend-proxied user exec path.
-- Backend enforces auth/roles + project grants; `features` defines tiers.
+- Create and open are separate: create provisions container + empty disk with no session; open ensures the container runs and sets the workspace session cookie, and the tab loads with no URL secret.
 
-Open: launch/session sequence details, sync semantics, reconnect behavior.
+Open: endpoint request/response detail at scaffold.
