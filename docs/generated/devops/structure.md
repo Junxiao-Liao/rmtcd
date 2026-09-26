@@ -10,6 +10,6 @@ Owns not: runtime behavior (see `operations`), stack choices (see `tech-stack`).
 Locked:
 - One full-host-setup script: OS, k3s, disks, Cloudflare hooks, backend deploy.
 - Workspace image defined alongside: slim Debian family, basic toolchain with apt.
-- k3s manifests for backend, per-workspace containers, routing.
+- k3s manifests for backend, per-workspace containers, routing; kind runs the same manifests locally.
 
 Open: script and manifest detail at build.

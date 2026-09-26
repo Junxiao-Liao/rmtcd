@@ -2,7 +2,7 @@
 
 > Generated from `docs/proposal.md`. Agents: keep up to date with code.
 
-Purpose: define the shell's overall visual style.
+Purpose: define the Angular UI's overall visual style.
 
 Owns: palette, type, density, component look.
 Owns not: page layouts (see `pages`), Tailwind setup (see `structure`).
@@ -12,4 +12,4 @@ Locked:
 - Palette follows the VS Code Dark+ terminal: near-#1E1E1E surfaces, terminal green accent, ANSI status colors.
 - Type is the system stack (UI + mono), zero webfont weight — exactly how VS Code renders.
 
-Open: density, signature elements.
+Open: none. No signature element — this is a personal tool, not a brand.

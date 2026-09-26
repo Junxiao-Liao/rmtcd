@@ -8,7 +8,7 @@ Owns: principles, candidates with decision criteria, wrapper interfaces, code-se
 Owns not: flows (see `architecture`), API shapes (see `backend`), provisioning steps (see `operations`).
 
 Locked:
-- Backend: Rust on axum (leanest pick). Frontend shell: Angular; premium IDE is code-server web (not custom Monaco), release pinned and upgraded deliberately.
+- Backend: Rust on axum (leanest pick). Frontend: Angular UI; premium IDE is code-server web (not custom Monaco), release pinned and upgraded deliberately.
 - Wrapper is in-process (not sidecar), one trait per capability: Volumes (create/delete workspace disks; EBS first adapter), Objects (put/get app objects; S3-shaped, unused for now), Rdb (users, workspaces, quotas, usage rows). No Exec trait.
 - RDB: smallest Postgres on RDS first with backups on, accessed via sqlx (checked SQL, no ORM magic), scale when needed; optimize for Postgres-to-Postgres portability.
 - Containers on k3s; code-server per premium workspace.

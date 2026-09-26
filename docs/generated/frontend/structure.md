@@ -2,7 +2,7 @@
 
 > Generated from `docs/proposal.md`. Agents: keep up to date with code. Approximate on purpose — doc phase cannot be impl-complete.
 
-Purpose: sketch the Angular shell layout.
+Purpose: sketch the Angular UI layout.
 
 Owns: feature folders, shared pieces, styling hookup.
 Owns not: page layouts (see `pages`), visual identity (see `visual`), backend layout (see `backend/structure`).

@@ -12,4 +12,6 @@ Locked:
 - One purpose per file; files stay small and orthogonal.
 - Schema changes always keep RDB normal forms; the schema doc tracks every table.
 
-Open: formatter/linter picks and per-language idioms at scaffold.
+- Toolchain defaults: rustfmt + clippy, prettier + eslint.
+
+Open: per-language idioms at scaffold.
